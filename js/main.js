@@ -87,19 +87,14 @@ function renderAchievements() {
     const achievementsList = document.getElementById('achievementsList');
     const achievements = [
         {
-            icon: '<i class="fas fa-trophy"></i>',
-            title: 'DevOps Excellence Award',
-            description: 'Recognition for outstanding contributions to infrastructure automation and cloud architecture'
-        },
-        {
-            icon: '<i class="fas fa-star"></i>',
-            title: 'Best Innovation',
-            description: 'Led successful digital transformation initiative reducing deployment time by 80%'
+            icon: '<i class="fas fa-certificate"></i>',
+            title: 'Certificate of Appreciation',
+            description: 'o9 Solutions Inc • 2021'
         },
         {
             icon: '<i class="fas fa-medal"></i>',
-            title: 'Leadership Recognition',
-            description: 'Recognized for mentoring and leading high-performing DevOps teams'
+            title: 'Sports Award',
+            description: 'o9 Solutions Inc • 2025'
         }
     ];
     
@@ -117,16 +112,10 @@ function renderEducation() {
     const educationList = document.getElementById('educationList');
     const education = [
         {
-            degree: 'Bachelor of Technology',
-            institution: 'University Name',
-            year: '2016',
-            field: 'Computer Science'
-        },
-        {
-            degree: 'AWS Certified Solutions Architect',
-            institution: 'Amazon Web Services',
-            year: '2022',
-            field: 'Professional Certification'
+            degree: 'B.Tech (Computer Science & Engineering)',
+            institution: 'ICFAI Dehradun',
+            year: '2015',
+            field: 'CGPA: 9.1'
         }
     ];
     
@@ -144,22 +133,22 @@ function renderDevelopment() {
     const developmentList = document.getElementById('developmentList');
     const development = [
         {
-            title: 'Kubernetes Advanced Administration',
-            type: 'Course',
-            date: '2023',
-            description: 'Deep dive into Kubernetes architecture, networking, and security best practices'
-        },
-        {
-            title: 'Infrastructure as Code Mastery',
-            type: 'Workshop',
-            date: '2023',
-            description: 'Comprehensive training on Terraform, Terragrunt, and IaC best practices'
-        },
-        {
-            title: 'DevOps Leadership Program',
-            type: 'Certification',
+            title: 'o9 Involve 2022',
+            type: 'Organizing Committee',
             date: '2022',
-            description: 'Executive-level training on leading DevOps teams and driving transformation'
+            description: 'Active member of organizing committee for o9 Involve conference'
+        },
+        {
+            title: 'o9 Involve 2023',
+            type: 'Organizing Committee',
+            date: '2023',
+            description: 'Active member of organizing committee for o9 Involve conference'
+        },
+        {
+            title: 'o9 Involve 2025',
+            type: 'Organizing Committee',
+            date: '2025',
+            description: 'Active member of organizing committee for o9 Involve conference'
         }
     ];
     
