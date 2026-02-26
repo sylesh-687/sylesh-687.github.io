@@ -1,0 +1,26 @@
+[
+  {
+    "title": "DevOps Architect",
+    "company": "o9 Solutions Inc.",
+    "period": "2022 - Present",
+    "description": "Leading DevOps transformation initiatives across the organization. Architecting cloud-native solutions and mentoring a team of 5 engineers. Reduced infrastructure costs by 40% through optimization and automation."
+  },
+  {
+    "title": "DevOps Engineer",
+    "company": "Tech Innovations Ltd.",
+    "period": "2020 - 2022",
+    "description": "Implemented CI/CD pipelines using Jenkins and GitLab CI. Managed Kubernetes clusters hosting 100+ microservices. Established monitoring and alerting using Prometheus and Grafana."
+  },
+  {
+    "title": "Infrastructure Engineer",
+    "company": "Digital Services Corp.",
+    "period": "2018 - 2020",
+    "description": "Managed AWS infrastructure for multiple teams. Implemented Infrastructure as Code practices using CloudFormation and Terraform. Automated deployment processes reducing manual errors by 95%."
+  },
+  {
+    "title": "Systems Administrator",
+    "company": "Enterprise Solutions LLC",
+    "period": "2016 - 2018",
+    "description": "Managed on-premises Linux servers and networking infrastructure. Implemented monitoring and backup solutions. Provided technical support and documentation for IT operations."
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Multi-Cloud Infrastructure Automation",
+    "description": "Designed and implemented Infrastructure as Code using Terraform to manage resources across AWS, Azure, and GCP. Automated provisioning reduced deployment time by 80%.",
+    "technologies": ["Terraform", "AWS", "Azure", "GCP", "Ansible"],
+    "github": "https://github.com/yourusername/iac-automation",
+    "link": null
+  },
+  {
+    "title": "Kubernetes GitOps Pipeline",
+    "description": "Built a complete GitOps workflow using ArgoCD and FluxCD for multi-cluster Kubernetes deployments. Achieved zero-downtime deployments with automated rollbacks.",
+    "technologies": ["Kubernetes", "ArgoCD", "FluxCD", "Docker", "Helm"],
+    "github": "https://github.com/yourusername/k8s-gitops",
+    "link": null
+  },
+  {
+    "title": "CI/CD Pipeline Modernization",
+    "description": "Migrated legacy Jenkins pipelines to GitHub Actions, improving build times by 60% and reducing infrastructure costs. Implemented comprehensive testing and security scanning.",
+    "technologies": ["GitHub Actions", "Jenkins", "Docker", "Python", "YAML"],
+    "github": "https://github.com/yourusername/cicd-modernization",
+    "link": null
+  },
+  {
+    "title": "Observability Platform",
+    "description": "Built centralized monitoring and logging using Prometheus, Grafana, and ELK stack across 50+ microservices. Enabled proactive alerting and reduced MTTR by 50%.",
+    "technologies": ["Prometheus", "Grafana", "ELK", "Docker", "Kubernetes"],
+    "github": "https://github.com/yourusername/observability-platform",
+    "link": null
+  },
+  {
+    "title": "Disaster Recovery Automation",
+    "description": "Implemented automated backup and recovery procedures for critical applications. Created runbooks and disaster recovery procedures ensuring RTO/RPO targets.",
+    "technologies": ["Terraform", "AWS", "Python", "Bash", "Velero"],
+    "github": "https://github.com/yourusername/dr-automation",
+    "link": null
+  },
+  {
+    "title": "Container Registry & Security Scanning",
+    "description": "Set up private container registries with automated security scanning, vulnerability assessment, and compliance checks. Integrated with CI/CD for automated scanning on push.",
+    "technologies": ["Docker Registry", "Trivy", "OPA", "Harbor", "Kubernetes"],
+    "github": "https://github.com/yourusername/container-security",
+    "link": null
+  }
+]
