@@ -82,6 +82,97 @@ function renderExperience(experience) {
     `).join('');
 }
 
+// Render achievements
+function renderAchievements() {
+    const achievementsList = document.getElementById('achievementsList');
+    const achievements = [
+        {
+            icon: '<i class="fas fa-trophy"></i>',
+            title: 'DevOps Excellence Award',
+            description: 'Recognition for outstanding contributions to infrastructure automation and cloud architecture'
+        },
+        {
+            icon: '<i class="fas fa-star"></i>',
+            title: 'Best Innovation',
+            description: 'Led successful digital transformation initiative reducing deployment time by 80%'
+        },
+        {
+            icon: '<i class="fas fa-medal"></i>',
+            title: 'Leadership Recognition',
+            description: 'Recognized for mentoring and leading high-performing DevOps teams'
+        }
+    ];
+    
+    achievementsList.innerHTML = achievements.map(achievement => `
+        <div class="achievement-card">
+            <div class="achievement-icon">${achievement.icon}</div>
+            <h3>${achievement.title}</h3>
+            <p>${achievement.description}</p>
+        </div>
+    `).join('');
+}
+
+// Render education
+function renderEducation() {
+    const educationList = document.getElementById('educationList');
+    const education = [
+        {
+            degree: 'Bachelor of Technology',
+            institution: 'University Name',
+            year: '2016',
+            field: 'Computer Science'
+        },
+        {
+            degree: 'AWS Certified Solutions Architect',
+            institution: 'Amazon Web Services',
+            year: '2022',
+            field: 'Professional Certification'
+        }
+    ];
+    
+    educationList.innerHTML = education.map(edu => `
+        <div class="education-item">
+            <h3>${edu.degree}</h3>
+            <div class="education-institution">${edu.institution}</div>
+            <div class="education-year">${edu.year} • ${edu.field}</div>
+        </div>
+    `).join('');
+}
+
+// Render professional development
+function renderDevelopment() {
+    const developmentList = document.getElementById('developmentList');
+    const development = [
+        {
+            title: 'Kubernetes Advanced Administration',
+            type: 'Course',
+            date: '2023',
+            description: 'Deep dive into Kubernetes architecture, networking, and security best practices'
+        },
+        {
+            title: 'Infrastructure as Code Mastery',
+            type: 'Workshop',
+            date: '2023',
+            description: 'Comprehensive training on Terraform, Terragrunt, and IaC best practices'
+        },
+        {
+            title: 'DevOps Leadership Program',
+            type: 'Certification',
+            date: '2022',
+            description: 'Executive-level training on leading DevOps teams and driving transformation'
+        }
+    ];
+    
+    developmentList.innerHTML = development.map(item => `
+        <div class="development-card">
+            <div class="development-type">${item.type}</div>
+            <h3>${item.title}</h3>
+            <div class="development-date">${item.date}</div>
+            <p>${item.description}</p>
+        </div>
+    `).join('');
+}
+
 // Handle contact form
 document.getElementById('contactForm')?.addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -114,4 +205,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Load data on page load
-document.addEventListener('DOMContentLoaded', loadData);
+document.addEventListener('DOMContentLoaded', () => {
+    loadData();
+    renderAchievements();
+    renderEducation();
+    renderDevelopment();
+});
