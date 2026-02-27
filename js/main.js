@@ -54,8 +54,6 @@ async function loadData() {
         console.error('Error loading data:', err);
     }
 }
-    }
-}
 
 // Render projects
 function renderProjects(projects) {
