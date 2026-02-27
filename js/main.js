@@ -31,18 +31,29 @@ document.addEventListener('DOMContentLoaded', () => {
 // Load data from JSON files
 async function loadData() {
     try {
-        const [projectsRes, experienceRes] = await Promise.all([
+        const [projectsRes, experienceRes, educationRes, achievementsRes, developmentRes] = await Promise.all([
             fetch('data/projects.json'),
-            fetch('data/experience.json')
+            fetch('data/experience.json'),
+            fetch('data/education.json'),
+            fetch('data/achievements.json'),
+            fetch('data/development.json')
         ]);
 
         const projects = await projectsRes.json();
         const experience = await experienceRes.json();
+        const education = await educationRes.json();
+        const achievements = await achievementsRes.json();
+        const development = await developmentRes.json();
 
         renderProjects(projects);
         renderExperience(experience);
+        renderEducation(education);
+        renderAchievements(achievements);
+        renderDevelopment(development);
     } catch (err) {
         console.error('Error loading data:', err);
+    }
+}
     }
 }
 
@@ -83,20 +94,8 @@ function renderExperience(experience) {
 }
 
 // Render achievements
-function renderAchievements() {
+function renderAchievements(achievements) {
     const achievementsList = document.getElementById('achievementsList');
-    const achievements = [
-        {
-            icon: '<i class="fas fa-certificate"></i>',
-            title: 'Certificate of Appreciation',
-            description: 'o9 Solutions Inc • 2021'
-        },
-        {
-            icon: '<i class="fas fa-medal"></i>',
-            title: 'Sports Award',
-            description: 'o9 Solutions Inc • 2025'
-        }
-    ];
     
     achievementsList.innerHTML = achievements.map(achievement => `
         <div class="achievement-card">
@@ -108,16 +107,8 @@ function renderAchievements() {
 }
 
 // Render education
-function renderEducation() {
+function renderEducation(education) {
     const educationList = document.getElementById('educationList');
-    const education = [
-        {
-            degree: 'B.Tech (Computer Science & Engineering)',
-            institution: 'ICFAI Dehradun',
-            year: '2015',
-            field: 'CGPA: 9.1'
-        }
-    ];
     
     educationList.innerHTML = education.map(edu => `
         <div class="education-item">
@@ -129,28 +120,8 @@ function renderEducation() {
 }
 
 // Render professional development
-function renderDevelopment() {
+function renderDevelopment(development) {
     const developmentList = document.getElementById('developmentList');
-    const development = [
-        {
-            title: 'o9 Involve 2022',
-            type: 'Organizing Committee',
-            date: '2022',
-            description: 'Active member of organizing committee for o9 Involve conference'
-        },
-        {
-            title: 'o9 Involve 2023',
-            type: 'Organizing Committee',
-            date: '2023',
-            description: 'Active member of organizing committee for o9 Involve conference'
-        },
-        {
-            title: 'o9 Involve 2025',
-            type: 'Organizing Committee',
-            date: '2025',
-            description: 'Active member of organizing committee for o9 Involve conference'
-        }
-    ];
     
     developmentList.innerHTML = development.map(item => `
         <div class="development-card">
@@ -196,7 +167,4 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // Load data on page load
 document.addEventListener('DOMContentLoaded', () => {
     loadData();
-    renderAchievements();
-    renderEducation();
-    renderDevelopment();
 });
