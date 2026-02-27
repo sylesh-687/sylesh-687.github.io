@@ -1,9 +1,9 @@
 [
   {
-    "title": "Multi-Cloud Infrastructure Automation",
-    "description": "Designed and implemented Infrastructure as Code using Terraform to manage resources across AWS, Azure, and GCP. Automated provisioning reduced deployment time by 80%.",
-    "technologies": ["Terraform", "AWS", "Azure", "GCP", "Ansible"],
-    "github": "https://github.com/yourusername/iac-automation",
+    "title": "Private CA Trust Injection Framework",
+    "description": "Designed and delivered this solution end-to-end, enabling secure internal PKI integration in Kubernetes through automated deployment and policy enforcement.",
+    "technologies": ["Helm", "Trust Manager", "Cert Manager", "Kyverno", "Kubernetes"],
+    "github": "https://github.com/sylesh-687/private-ca-trust-injection",
     "link": null
   },
   {
