@@ -770,10 +770,6 @@ body {
         grid-template-columns: 1fr;
     }
 
-    .contact-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
     .about-stats {
         grid-template-columns: 1fr;
     }
