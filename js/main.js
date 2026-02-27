@@ -125,10 +125,11 @@ function renderDevelopment(development) {
     
     developmentList.innerHTML = development.map(item => `
         <div class="development-card">
-            <div class="development-type">${item.type}</div>
-            <h3>${item.title}</h3>
+            <div class="development-type">${item.role}</div>
+            <h3>${item.event}</h3>
             <div class="development-date">${item.date}</div>
             <p>${item.description}</p>
+            ${item.link && item.link !== '#' ? `<a href="${item.link}" target="_blank" rel="noopener">Learn More</a>` : ''}
         </div>
     `).join('');
 }
