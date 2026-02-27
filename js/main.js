@@ -13,8 +13,12 @@ document.querySelectorAll('.nav-link').forEach(link => {
     });
 });
 
-// Handle avatar image load/error
+// Handle avatar image load/error and load data on page load
 document.addEventListener('DOMContentLoaded', () => {
+    // Load data from JSON files
+    loadData();
+    
+    // Handle avatar image
     const avatarImg = document.querySelector('.avatar-img');
     if (avatarImg) {
         avatarImg.onerror = () => {
@@ -161,9 +165,4 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             });
         }
     });
-});
-
-// Load data on page load
-document.addEventListener('DOMContentLoaded', () => {
-    loadData();
 });
