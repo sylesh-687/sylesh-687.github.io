@@ -7,10 +7,10 @@
     "link": null
   },
   {
-    "title": "Kubernetes GitOps Pipeline",
-    "description": "Built a complete GitOps workflow using ArgoCD and FluxCD for multi-cluster Kubernetes deployments. Achieved zero-downtime deployments with automated rollbacks.",
-    "technologies": ["Kubernetes", "ArgoCD", "FluxCD", "Docker", "Helm"],
-    "github": "https://github.com/yourusername/k8s-gitops",
+    "title": "Secret Stream",
+    "description": "A zero-touch secrets delivery platform that injects secure credentials into Kubernetes workloads without requiring application changes.",
+    "technologies": ["Helm", "ArgoCD", "Kubernetes", "External Secrets Operator", "Kyverno","OpenBao"],
+    "github": "https://github.com/sylesh-687/secret-stream.git",
     "link": null
   },
   {
