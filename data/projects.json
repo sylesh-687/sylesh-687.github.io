@@ -14,10 +14,10 @@
     "link": null
   },
   {
-    "title": "CI/CD Pipeline Modernization",
-    "description": "Migrated legacy Jenkins pipelines to GitHub Actions, improving build times by 60% and reducing infrastructure costs. Implemented comprehensive testing and security scanning.",
-    "technologies": ["GitHub Actions", "Jenkins", "Docker", "Python", "YAML"],
-    "github": "https://github.com/yourusername/cicd-modernization",
+    "title": "Internal Developer Platform",
+    "description": "Built an Internal Developer Platform, Providing self service golden path templates for Automated CI/CD, infrastructure, security and observability ",
+    "technologies": ["Backstage", "Jenkins", "Docker", "Terraform", "Terragrunt","Helm","Prometheus","Grafana","Openbao","Trivy","Open Policy Agent","Kubecost","ArgoCD"],
+    "github": "https://github.com/sylesh-687/idp.git",
     "link": null
   },
   {
