@@ -21,10 +21,10 @@
     "link": null
   },
   {
-    "title": "Observability Platform",
-    "description": "Built centralized monitoring and logging using Prometheus, Grafana, and ELK stack across 50+ microservices. Enabled proactive alerting and reduced MTTR by 50%.",
-    "technologies": ["Prometheus", "Grafana", "ELK", "Docker", "Kubernetes"],
-    "github": "https://github.com/yourusername/observability-platform",
+    "title": "KubeSecure",
+    "description": "KubeSecure is a production-grade Kubernetes security platform that implements Zero Trust networking with Cilium, real-time threat detection using Falco, and secure GitOps-driven deployments.",
+    "technologies": ["Cilium", "Hubble", "Kubernetes", "Docker", "Terraform","Terragrunt","Falco","Trivy","ArgoCD","Prometheus","Grafana"],
+    "github": "https://github.com/sylesh-687/kubesecure.git",
     "link": null
   },
   {
