@@ -35,10 +35,10 @@
     "link": null
   },
   {
-    "title": "Container Registry & Security Scanning",
-    "description": "Set up private container registries with automated security scanning, vulnerability assessment, and compliance checks. Integrated with CI/CD for automated scanning on push.",
-    "technologies": ["Docker Registry", "Trivy", "OPA", "Harbor", "Kubernetes"],
-    "github": "https://github.com/yourusername/container-security",
+    "title": "Central Tagging Engine",
+    "description": "Solves Tags Sprawl, Enable Central Place to Add/Remove Tags",
+    "technologies": ["Terraform"],
+    "github": "https://github.com/yourusername/central-tagging-engine",
     "link": null
   }
 ]
