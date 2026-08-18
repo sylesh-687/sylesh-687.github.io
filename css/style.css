@@ -832,3 +832,13 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+.career-highlights {
+    padding-left: 2rem;
+    margin-top: 1rem;
+}
+
+.career-highlights li {
+    padding-left: 0.5rem;
+    margin-bottom: 0.75rem;
+}
